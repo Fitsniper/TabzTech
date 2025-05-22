@@ -1,0 +1,271 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background: rgba(255,255,255,0.85);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.cta-btn:hover {
+    background: #6a0dad;
+}
+
+.features {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.testimonials {
+    background: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 1em auto;
+    max-width: 500px;
+    background: #fff;
+    padding: 1em 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.testimonials span {
+    display: block;
+    margin-top: 0.5em;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+.newsletter {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.newsletter form {
+    margin-bottom: 1em;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 220px;
+    font-size: 1em;
+}
+
+.newsletter button {
+    padding: 0.5em 1.5em;
+    background: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #6a0dad;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.product {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 250px;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h2 {
+    color: #900;
+}
+
+.cart {
+    margin: 2rem;
+    padding: 1rem;
+    border-top: 2px solid #ccc;
+    background: #fff;
+    border-radius: 8px;
+}
+
+button, .cart button {
+    background-color: #4b0082;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+button:hover, .cart button:hover {
+    background-color: #6a0dad;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        width: 90%;
+    }
+    .hero-text {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Flip card animation for product images */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 250px;
+    perspective: 1000px;
+    margin-bottom: 1rem;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flip-card-back {
+    background: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.flip-card-back h2 {
+    margin-top: 0;
+    color: #900;
+}
+
+.flip-card-back ul {
+    padding-left: 1.2em;
+    margin: 0.5em 0 0 0;
+    text-align: left;
+}

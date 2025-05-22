@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Tracking - iPhone Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Track Your Order</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="About.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <form id="trackOrderForm">
+        <label for="orderID">Enter your Order ID:</label>
+        <input type="text" id="orderID" required />
+        <button type="submit">Track Order</button>
+      </form>
+      <div id="orderStatus"></div>
+    </div>
+  </main>
+  <script src="order-tracking.js"></script>
+</body>
+</html>

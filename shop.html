@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iPhone Store - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Shop iPhones</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+            <a href="order-tracking.html">Order Tracking</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <div class="products">
+            <!-- Product: iPhone XR -->
+            <div class="product" data-name="iPhone XR">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_xr.jpg" alt="iPhone XR">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone XR</h2>
+                            <p>From 64GB to 128GB</p>
+                            <ul>
+                                <li>6.1-inch Liquid Retina display</li>
+                                <li>A12 Bionic chip</li>
+                                <li>12MP camera</li>
+                                <li>Face ID</li>
+                                <li>Long battery life</li>
+                                <li>80% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>64GB - R6 499</option>
+                    <option>128GB - R7 450</option>
+                </select>
+                <button onclick="addToCart('iPhone XR')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone 11 -->
+            <div class="product" data-name="iPhone 11">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_11.jpg" alt="iPhone 11">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone 11</h2>
+                            <p>From 64GB to 128GB</p>
+                            <ul>
+                                <li>6.1-inch Liquid Retina display</li>
+                                <li>A13 Bionic chip</li>
+                                <li>12MP dual-camera</li>
+                                <li>Face ID</li>
+                                <li>Water resistant</li>
+                                <li>82% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>64GB - R6 499</option>
+                    <option>128GB - R9 450</option>
+                </select>
+                <button onclick="addToCart('iPhone 11')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone 12 -->
+            <div class="product" data-name="iPhone 12">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_12.jpg" alt="iPhone 12">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone 12</h2>
+                            <p>From 64GB to 256GB</p>
+                            <ul>
+                                <li>6.1-inch Super Retina XDR</li>
+                                <li>A14 Bionic chip</li>
+                                <li>5G capable</li>
+                                <li>Dual 12MP camera</li>
+                                <li>Face ID</li>
+                                <li>85% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>64GB - R7 500</option>
+                    <option>256GB - R10 000</option>
+                </select>
+                <button onclick="addToCart('iPhone 12')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone 13 Pro Max -->
+            <div class="product" data-name="iPhone 13 Pro Max">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_13 pro max.jpg" alt="iPhone 13 Pro Max">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone 13 Pro Max</h2>
+                            <p>From 128GB to 256GB</p>
+                            <ul>
+                                <li>6.7-inch Super Retina XDR</li>
+                                <li>A15 Bionic chip</li>
+                                <li>Triple 12MP cameras</li>
+                                <li>ProMotion technology</li>
+                                <li>Face ID</li>
+                                <li>90% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>128GB - R17 915</option>
+                    <option>256GB - R20 606</option>
+                </select>
+                <button onclick="addToCart('iPhone 13 Pro Max')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone 14 -->
+            <div class="product" data-name="iPhone 14">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_14.jpg" alt="iPhone 14">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone 14</h2>
+                            <p>From 128GB to 512GB</p>
+                            <ul>
+                                <li>6.1-inch Super Retina XDR</li>
+                                <li>A15 Bionic chip</li>
+                                <li>Advanced dual-camera</li>
+                                <li>Emergency SOS</li>
+                                <li>5G capable</li>
+                                <li>90% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>128GB - R14 333</option>
+                    <option>512GB - R19 714</option>
+                </select>
+                <button onclick="addToCart('iPhone 14')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone 15 Pro -->
+            <div class="product" data-name="iPhone 15 Pro">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_15 pro.jpg" alt="iPhone 15 Pro">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone 15 Pro</h2>
+                            <p>From 128GB to 1TB</p>
+                            <ul>
+                                <li>6.1-inch Super Retina XDR</li>
+                                <li>A17 Pro chip</li>
+                                <li>Titanium body</li>
+                                <li>Pro camera system</li>
+                                <li>USB-C support</li>
+                                <li>100% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>128GB - R22 423</option>
+                    <option>1TB - R25 096</option>
+                </select>
+                <button onclick="addToCart('iPhone 15 Pro')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone 15 -->
+            <div class="product" data-name="iPhone 15">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_15.jpg" alt="iPhone 15">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone 15</h2>
+                            <p>From 128GB to 512GB</p>
+                            <ul>
+                                <li>6.1-inch Super Retina XDR</li>
+                                <li>A16 Bionic chip</li>
+                                <li>48MP Main camera</li>
+                                <li>Dynamic Island</li>
+                                <li>USB-C support</li>
+                                <li>100% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>128GB - R16 126</option>
+                    <option>512GB - R23 318</option>
+                </select>
+                <button onclick="addToCart('iPhone 15')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPhone SE -->
+            <div class="product" data-name="iPhone SE">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="iphone_SE.jpg" alt="iPhone SE">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPhone SE</h2>
+                            <p>From 64GB to 128GB</p>
+                            <ul>
+                                <li>4.7-inch Retina HD display</li>
+                                <li>A15 Bionic chip</li>
+                                <li>Touch ID</li>
+                                <li>Single 12MP camera</li>
+                                <li>5G capable</li>
+                                <li>85% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>64GB - R7 157</option>
+                    <option>128GB - R8 951</option>
+                </select>
+                <button onclick="addToCart('iPhone SE')">Add to Cart</button>
+            </div>
+
+            <!-- Product: iPad 5th Gen -->
+            <div class="product" data-name="iPad 5th Gen">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="ipad 5th gen.jpg" alt="iPad 5th Gen">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>iPad 5th Gen</h2>
+                            <p>From 32GB to 128GB</p>
+                            <ul>
+                                <li>9.7-inch Retina display</li>
+                                <li>A9 chip</li>
+                                <li>8MP back camera</li>
+                                <li>Touch ID</li>
+                                <li>iOS support</li>
+                                <li>85% battery capacity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <select>
+                    <option>32GB - R5 901</option>
+                    <option>128GB - R7 692</option>
+                </select>
+                <button onclick="addToCart('iPad 5th Gen')">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Shopping Cart Section -->
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart"></ul>
+            <form action="mailto:aphiwembhele263@gmail.com" method="post" enctype="text/plain">
+                <input type="submit" value="Checkout via Email">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
